@@ -1,6 +1,7 @@
 == Introduction
 Node.js is the world’s fastest growing open source platform with over 3.5 million users and an annual growth rate of 100 percent. Node.js is used for web applications, IoT, mobile, enterprise application development and microservice architectures.
 With the creation of The Node.js Foundation and the adoption of Node.js among several companies the future of Node.js is bright and this is exactly why adding Node.js support in JSDT is the obvious next step.
+
 == Pre-requirements
 
 The following software must be pre-installed:
