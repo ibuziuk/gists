@@ -1,0 +1,21 @@
+== Introduction
+Node.js is the world’s fastest growing open source platform with over 3.5 million users and an annual growth rate of 100 percent. Node.js is used for web applications, IoT, mobile, enterprise application development and microservice architectures.
+With the creation of The Node.js Foundation and the adoption of Node.js among several companies the future of Node.js is bright and this is exactly why adding Node.js support in JSDT is the obvious next step.
+== Pre-requirements
+
+The following software must be pre-installed:
+
+* https://nodejs.org/en/[Node.js]
+* https://www.npmjs.com/[npm]
+
+TIP: Installation instructions for *Node.js* and *npm* can be found https://docs.npmjs.com/getting-started/installing-node[here].
+
+== Quick Start Guide
+Running and debugging Node.js applications is pretty straightforward. In order to run/debug a Node.js app you need to select *Run -> Run/Debug Configurations…* and double click *”Node.js Application”* this will create a new Node.js Application launch configuration where you need to specify a project and a main file to be run/debug, optionally in Arguments tab you can specify Node arguments, Application arguments and the working directory from which the Node.js application will be run/debug.
+After pressing Run/Debug you can see application’s output in Console view and/or debug your app in the Debug perspective.
+*Note:* Optionally you can use Node.js Application shortcut for projects containing a “package.json” file or a “*.js” file that is not in “bower_component” or “node_modules” folder. 
+To use the shortcut just right click on the Project/JS file -> *Run/Debug As -> Node.js Application*.
+ 
+
+
+
