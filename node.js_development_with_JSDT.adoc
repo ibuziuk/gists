@@ -16,8 +16,19 @@ By default, the Node.js launch configuration will try to use the system-wide Nod
 
 However, it is also posible to define customized Node.js binary paths, switch the Node.js used by default to run or debug applications and, in general, control the Node.js runtimes available to the workspace. To do that, navigate to *Eclipse Preferences -> JavaScript -> Runtimes*, where the following dialog will appear:
 
-image::
+image::Node.js_Runtime_Preferences_1.png[Node.js Runtime Preferences Page]
 
+The identified global Node.js (if there is one) will be listed there, however you can use the buttons on the right side to work with runtimes as follow:
+*Add*: Provide the definition of a new Node.js installation.
+*Edit*: Modify an existing Node.js runtime definition. For non-user defined runtimes this will show the runtime settings in read-only mode.
+*Duplicate*: Create a copy of an existing definition of a Node.js runtime. This is specially useful if you want to run the same installation with different runtime arguments.
+*Remove*: Delete an existing runtime definition. Only available for user-defined Node.js runtimes.
+
+When there are multiple Node.js installations defined, it is possible to switch the default one used to run the workbench Node.js applications. This can be achieved by clicking on the checkbox at the left of the desired installation:
+
+image::Node.js_Runtime_Preferences_2.png[Node.js Runtime Preferences Page 2]
+
+NOTE: This change will affect all Node.js launch configurations since this is a workbench-wide setting.
 
 == Quick Start Guide
 Running and debugging Node.js applications is pretty straightforward. In order to run/debug a Node.js app you need to select *Run -> Run/Debug Configurations…* and double click *”Node.js Application”* this will create a new Node.js Application launch configuration where you need to specify a project and a main file to be run/debug.
