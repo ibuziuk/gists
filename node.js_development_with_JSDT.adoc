@@ -11,6 +11,14 @@ The following software must be pre-installed:
 
 TIP: Installation instructions for *Node.js* and *npm* can be found https://docs.npmjs.com/getting-started/installing-node[here].
 
+== Node.js runtime definition
+By default, the Node.js launch configuration will try to use the system-wide Node.js installation which is automatically identified on workbench startup.
+
+However, it is also posible to define customized Node.js binary paths, switch the Node.js used by default to run or debug applications and, in general, control the Node.js runtimes available to the workspace. To do that, navigate to *Eclipse Preferences -> JavaScript -> Runtimes*, where the following dialog will appear:
+
+image::
+
+
 == Quick Start Guide
 Running and debugging Node.js applications is pretty straightforward. In order to run/debug a Node.js app you need to select *Run -> Run/Debug Configurations…* and double click *”Node.js Application”* this will create a new Node.js Application launch configuration where you need to specify a project and a main file to be run/debug.
 
