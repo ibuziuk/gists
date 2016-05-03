@@ -19,10 +19,11 @@ However, it is also posible to define customized Node.js binary paths, switch th
 image::Node.js_Runtime_Preferences_1.png[Node.js Runtime Preferences Page]
 
 The identified global Node.js (if there is one) will be listed there, however you can use the buttons on the right side to work with runtimes as follow:
-*Add*: Provide the definition of a new Node.js installation.
-*Edit*: Modify an existing Node.js runtime definition. For non-user defined runtimes this will show the runtime settings in read-only mode.
-*Duplicate*: Create a copy of an existing definition of a Node.js runtime. This is specially useful if you want to run the same installation with different runtime arguments.
-*Remove*: Delete an existing runtime definition. Only available for user-defined Node.js runtimes.
+
+* *Add*: Provide the definition of a new Node.js installation.
+* *Edit*: Modify an existing Node.js runtime definition. For non-user defined runtimes this will show the runtime settings in read-only mode.
+* *Duplicate*: Create a copy of an existing definition of a Node.js runtime. This is specially useful if you want to run the same installation with different runtime arguments.
+* *Remove*: Delete an existing runtime definition. Only available for user-defined Node.js runtimes.
 
 When there are multiple Node.js installations defined, it is possible to switch the default one used to run the workbench Node.js applications. This can be achieved by clicking on the checkbox at the left of the desired installation:
 
