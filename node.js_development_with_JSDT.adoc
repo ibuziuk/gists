@@ -17,6 +17,8 @@ After pressing Run/Debug you can see application’s output in Console view and/
 
 *Note:* Optionally you can use Node.js Application shortcut for projects containing a “package.json” file or a “.js” file that is not in “bower_component” or “node_modules” folder. 
 To use the shortcut just right click on the Project/JS file -> *Run/Debug As -> Node.js Application*.
+
+image::Node.js_Application_Shortcut.png[Node.js Application Shortcut]
  
 
 
