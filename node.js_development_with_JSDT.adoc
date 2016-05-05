@@ -1,6 +1,5 @@
 == Introduction
-Node.js is the world’s fastest growing open source platform with over 3.5 million users and an annual growth rate of 100 percent. Node.js is used for web applications, IoT, mobile, enterprise application development and microservice architectures.
-With the creation of The Node.js Foundation and the adoption of Node.js among several companies the future of Node.js is bright and this is exactly why adding Node.js support in JSDT is the obvious next step.
+Node.js is the world's fastest growing open source platform with over 3.5 million users and an annual growth rate of 100 percent. It is used for web applications, IoT, mobile, enterprise application development and microservice architectures. With the creation of the https://nodejs.org/en/foundation/[Node.js Foundation] and adoption amongst several companies the future of the platform is bright and clear. This is exactly why adding Node.js support to `JSDT` is the next obvious step.
 
 == Pre-requirements
 
@@ -14,7 +13,7 @@ TIP: Installation instructions for *Node.js* and *npm* can be found https://docs
 == Node.js runtime definition
 By default, the Node.js launch configuration will try to use the system-wide Node.js installation which is automatically identified on workbench startup.
 
-However, it is also posible to define customized Node.js binary paths, switch the Node.js used by default to run or debug applications and, in general, control the Node.js runtimes available to the workspace. To do that, navigate to *Eclipse Preferences -> JavaScript -> Runtimes*, where the following dialog will appear:
+However, it is also posible to define customized Node.js binary paths, switch the Node.js used by default to run or debug applications and fully control the Node.js runtimes available in the workspace. To do that, navigate to *Eclipse Preferences -> JavaScript -> Runtimes*, where the following dialog will appear:
 
 image::Node.js_Runtime_Preferences_1.png[Node.js Runtime Preferences Page]
 
@@ -29,20 +28,20 @@ When there are multiple Node.js installations defined, it is possible to switch 
 
 image::Node.js_Runtime_Preferences_2.png[Node.js Runtime Preferences Page 2]
 
-NOTE: This change will affect all Node.js launch configurations since this is a workbench-wide setting.
+NOTE: This change will affect *all* Node.js launch configurations since this is a workbench-wide setting.
 
 == Quick Start Guide
-Running and debugging Node.js applications is pretty straightforward. In order to run/debug a Node.js app you need to select *Run -> Run/Debug Configurations…* and double click *”Node.js Application”* this will create a new Node.js Application launch configuration where you need to specify a project and a main file to be run/debug.
+Running and debugging Node.js applications is pretty straightforward. In order to run/debug a Node.js app you need to select *Run -> Run/Debug Configurations…* and double click *Node.js Application”. This will create a new Node.js Application launch configuration where you need to specify a project and a main file to be run/debugged:
 
 image::Node.js_Application-Run_Configurations.png[Node.js Application - Run Configuration]
 
-Optionally in Arguments tab you can specify Node arguments, Application arguments and the working directory from which the Node.js application will be run/debug.
+Optionally in Arguments tab you can specify Node arguments, Application arguments and the working directory from which the Node.js application will be run/debugged:
 
 image::Node.js_Application_(Arguments)-Run_Configurations.png[Node.js Application (Arguments tab) - Run Configuration]
 
-After pressing Run/Debug you can see application’s output in Console view and/or debug your app in the Debug perspective.
+After pressing *Run/Debug* you can see application's output in the Console view and/or debug your app in the Debug perspective.
 
-*Note:* Optionally you can use Node.js Application shortcut for projects containing a “package.json” file or a “.js” file that is not in “bower_component” or “node_modules” folder. 
+NOTE: Node.js Application Launch shortcut will be availbale for projects containing a `package.json` file or a *.js* file that is not in `bower_component` or `node_modules` folder. 
 To use the shortcut just right click on the Project/JS file -> *Run/Debug As -> Node.js Application*.
 
 image::Node.js_Application_Shortcut.png[Node.js Application Shortcut]
