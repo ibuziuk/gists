@@ -45,6 +45,26 @@ NOTE: Node.js Application Launch shortcut will be availbale for projects contain
 To use the shortcut just right click on the Project/JS file -> *Run/Debug As -> Node.js Application*.
 
 image::Node.js_Application_Shortcut.png[Node.js Application Shortcut]
+
+
+image::variables.png[Variables tab]
+
+In order to run a task you should simply right-click on it *-> Run As -> Gulp / Grunt Task*
+
+image::hover.png[Hovering over function]
+
+The execution output will be available in the *Console View*:
+
+image::push_changes.png[Push changes to VM]
+
+
+Here is a short demo https://vimeo.com/165423967[video] covering Node.js debugger functionality:
+
+video::165423967[vimeo, width=640, height=400]
+
+== How to give it a go ?
+
+Node.js tools are available via `Eclipse IDE for Java EE Developers` / `Eclipse IDE for JavaScript and Web Developers` https://eclipse.org/downloads/index-developer.php[developer builds] before the official Neon release.
  
 
 
