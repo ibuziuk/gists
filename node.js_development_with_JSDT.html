@@ -5,7 +5,7 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.4">
-<title>Introduction</title>
+<title>JSDT 2.0 (Node.js)</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -422,7 +422,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_introduction">Introduction</h2>
+<h2 id="_jsdt_2_0_node_js">JSDT 2.0 (Node.js)</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Node.js is the world&#8217;s fastest growing open source platform with over 3.5 million users and an annual growth rate of 100 percent. It is used for web applications, IoT, mobile, enterprise application development and microservice architectures. With the creation of the <a href="https://nodejs.org/en/foundation/">Node.js Foundation</a> and adoption amongst several companies the future of the platform is bright and clear. This is exactly why adding Node.js support to <code>JSDT</code> is the next obvious step.</p>
@@ -518,7 +518,7 @@ This change will affect <strong>all</strong> Node.js launch configurations since
 <h2 id="_quick_start_guide">Quick Start Guide</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Running and debugging Node.js applications is pretty straightforward. In order to run/debug a Node.js app you need to select <strong>Run &#8594; Run/Debug Configurations…</strong> and double click *Node.js Application”. This will create a new Node.js Application launch configuration where you need to specify a project and a main file to be run/debugged:</p>
+<p>Running and debugging Node.js applications is pretty straightforward. In order to run/debug a Node.js app you need to select <strong>Run &#8594; Run / Debug Configurations…</strong> and double click <strong>Node.js Application</strong>. This will create a new Node.js Application launch configuration where you need to specify a project and a main file to be run / debugged:</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -526,7 +526,7 @@ This change will affect <strong>all</strong> Node.js launch configurations since
 </div>
 </div>
 <div class="paragraph">
-<p>Optionally in Arguments tab you can specify Node arguments, Application arguments and the working directory from which the Node.js application will be run/debugged:</p>
+<p>Optionally in Arguments tab you can specify <code>Node arguments</code>, <code>Application arguments</code> and the working directory from which the Node.js application will be run / debugged:</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -534,7 +534,7 @@ This change will affect <strong>all</strong> Node.js launch configurations since
 </div>
 </div>
 <div class="paragraph">
-<p>After pressing <strong>Run/Debug</strong> you can see application&#8217;s output in the Console view and/or debug your app in the Debug perspective.</p>
+<p>After pressing <strong>Run / Debug</strong> you can see application&#8217;s output in the Console view and / or debug your app in the Debug perspective.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -544,7 +544,7 @@ This change will affect <strong>all</strong> Node.js launch configurations since
 </td>
 <td class="content">
 Node.js Application Launch shortcut will be availbale for projects containing a <code>package.json</code> file or a <strong>.js</strong> file that is not in <code>bower_component</code> or <code>node_modules</code> folder.
-To use the shortcut just right click on the Project/JS file &#8594; <strong>Run/Debug As &#8594; Node.js Application</strong>.
+To use the shortcut just right click on the project / .js file &#8594; <strong>Run/Debug As &#8594; Node.js Application</strong>.
 </td>
 </tr>
 </table>
@@ -554,13 +554,24 @@ To use the shortcut just right click on the Project/JS file &#8594; <strong>Run/
 <img src="Node.js_Application_Shortcut.png" alt="Node.js Application Shortcut">
 </div>
 </div>
+<div class="paragraph">
+<p>In order to debug the application right click on the project / .js file &#8594; <strong>Debug As &#8594; Node.js Application</strong>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="debug.png" alt="Debugging Node.js app">
+</div>
+</div>
+<div class="paragraph">
+<p>While debugging, all JavaScript variables will be available in the <strong>Variables</strong> view:</p>
+</div>
 <div class="imageblock">
 <div class="content">
 <img src="variables.png" alt="Variables tab">
 </div>
 </div>
 <div class="paragraph">
-<p>In order to run a task you should simply right-click on it <strong>&#8594; Run As &#8594; Gulp / Grunt Task</strong></p>
+<p>Hovering over variables in the editor is also supported:</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -568,13 +579,21 @@ To use the shortcut just right click on the Project/JS file &#8594; <strong>Run/
 </div>
 </div>
 <div class="paragraph">
-<p>The execution output will be available in the <strong>Console View</strong>:</p>
+<p>If you want to change the code during debug session just save the file with new changes, right click on it <strong>&#8594; V8 Debugging &#8594; Push Source Changes to VM</strong>:</p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="push_changes.png" alt="Push changes to VM">
 </div>
 </div>
+<div class="paragraph">
+<p>After that new changes will be applied and available in the debug session.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_demo">Demo</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Here is a short demo <a href="https://vimeo.com/165423967">video</a> covering Node.js debugger functionality:</p>
 </div>
@@ -595,9 +614,6 @@ To use the shortcut just right click on the Project/JS file &#8594; <strong>Run/
 </div>
 </div>
 <div id="footer">
-<div id="footer-text">
-Last updated 2016-05-05 13:36:14 ╓σφ≥≡αδⁿφεσΓ≡ε∩σΘ±ΩΦΘ (δσ≥ε)
-</div>
 </div>
 </body>
 </html>

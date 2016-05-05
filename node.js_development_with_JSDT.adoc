@@ -1,4 +1,4 @@
-== Introduction
+== JSDT 2.0 (Node.js)
 Node.js is the world's fastest growing open source platform with over 3.5 million users and an annual growth rate of 100 percent. It is used for web applications, IoT, mobile, enterprise application development and microservice architectures. With the creation of the https://nodejs.org/en/foundation/[Node.js Foundation] and adoption amongst several companies the future of the platform is bright and clear. This is exactly why adding Node.js support to `JSDT` is the next obvious step.
 
 == Pre-requirements
@@ -31,22 +31,26 @@ image::Node.js_Runtime_Preferences_2.png[Node.js Runtime Preferences Page 2]
 NOTE: This change will affect *all* Node.js launch configurations since this is a workbench-wide setting.
 
 == Quick Start Guide
-Running and debugging Node.js applications is pretty straightforward. In order to run/debug a Node.js app you need to select *Run -> Run/Debug Configurations…* and double click *Node.js Application*. This will create a new Node.js Application launch configuration where you need to specify a project and a main file to be run/debugged:
+Running and debugging Node.js applications is pretty straightforward. In order to run/debug a Node.js app you need to select *Run -> Run / Debug Configurations…* and double click *Node.js Application*. This will create a new Node.js Application launch configuration where you need to specify a project and a main file to be run / debugged:
 
 image::Node.js_Application-Run_Configurations.png[Node.js Application - Run Configuration]
 
-Optionally in Arguments tab you can specify Node arguments, Application arguments and the working directory from which the Node.js application will be run/debugged:
+Optionally in Arguments tab you can specify `Node arguments`, `Application arguments` and the working directory from which the Node.js application will be run / debugged:
 
 image::Node.js_Application_(Arguments)-Run_Configurations.png[Node.js Application (Arguments tab) - Run Configuration]
 
-After pressing *Run/Debug* you can see application's output in the Console view and/or debug your app in the Debug perspective.
+After pressing *Run / Debug* you can see application's output in the Console view and / or debug your app in the Debug perspective.
 
 NOTE: Node.js Application Launch shortcut will be availbale for projects containing a `package.json` file or a *.js* file that is not in `bower_component` or `node_modules` folder. 
 To use the shortcut just right click on the project / .js file -> *Run/Debug As -> Node.js Application*.
 
 image::Node.js_Application_Shortcut.png[Node.js Application Shortcut]
 
-In order to debug the application right click on the project / .js file -> *Debug As -> Node.js Application*. While debugging all JavaScript variables will be available in the *Variables* view:
+In order to debug the application right click on the project / .js file -> *Debug As -> Node.js Application*. 
+
+image::debug.png[Debugging Node.js app]
+
+While debugging, all JavaScript variables will be available in the *Variables* view:
 
 image::variables.png[Variables tab]
 
@@ -54,11 +58,15 @@ Hovering over variables in the editor is also supported:
  
 image::hover.png[Hovering over function]
 
-If you want to change the code during debug session just save the file with new changes right click on it *-> V8 Debugging -> Push Source Changes to VM*:
+If you want to change the code during debug session just save the file with new changes, right click on it *-> V8 Debugging -> Push Source Changes to VM*:
 
 image::push_changes.png[Push changes to VM]
 
-After that new changes will be applied to the debug session. Here is a short demo https://vimeo.com/165423967[video] covering Node.js debugger functionality:
+After that new changes will be applied and available in the debug session. 
+
+== Demo 
+
+Here is a short demo https://vimeo.com/165423967[video] covering Node.js debugger functionality:
 
 video::165423967[vimeo, width=640, height=400]
 
