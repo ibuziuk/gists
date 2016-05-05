@@ -31,7 +31,7 @@ image::Node.js_Runtime_Preferences_2.png[Node.js Runtime Preferences Page 2]
 NOTE: This change will affect *all* Node.js launch configurations since this is a workbench-wide setting.
 
 == Quick Start Guide
-Running and debugging Node.js applications is pretty straightforward. In order to run/debug a Node.js app you need to select *Run -> Run/Debug Configurations…* and double click *Node.js Application”. This will create a new Node.js Application launch configuration where you need to specify a project and a main file to be run/debugged:
+Running and debugging Node.js applications is pretty straightforward. In order to run/debug a Node.js app you need to select *Run -> Run/Debug Configurations…* and double click *Node.js Application*. This will create a new Node.js Application launch configuration where you need to specify a project and a main file to be run/debugged:
 
 image::Node.js_Application-Run_Configurations.png[Node.js Application - Run Configuration]
 
@@ -42,30 +42,26 @@ image::Node.js_Application_(Arguments)-Run_Configurations.png[Node.js Applicatio
 After pressing *Run/Debug* you can see application's output in the Console view and/or debug your app in the Debug perspective.
 
 NOTE: Node.js Application Launch shortcut will be availbale for projects containing a `package.json` file or a *.js* file that is not in `bower_component` or `node_modules` folder. 
-To use the shortcut just right click on the Project/JS file -> *Run/Debug As -> Node.js Application*.
+To use the shortcut just right click on the project / .js file -> *Run/Debug As -> Node.js Application*.
 
 image::Node.js_Application_Shortcut.png[Node.js Application Shortcut]
 
+In order to debug the application right click on the project / .js file -> *Debug As -> Node.js Application*. While debugging all JavaScript variables will be available in the *Variables* view:
 
 image::variables.png[Variables tab]
 
-In order to run a task you should simply right-click on it *-> Run As -> Gulp / Grunt Task*
-
+Hovering over variables in the editor is also supported: 
+ 
 image::hover.png[Hovering over function]
 
-The execution output will be available in the *Console View*:
+If you want to change the code during debug session just save the file with new changes right click on it *-> V8 Debugging -> Push Source Changes to VM*:
 
 image::push_changes.png[Push changes to VM]
 
-
-Here is a short demo https://vimeo.com/165423967[video] covering Node.js debugger functionality:
+After that new changes will be applied to the debug session. Here is a short demo https://vimeo.com/165423967[video] covering Node.js debugger functionality:
 
 video::165423967[vimeo, width=640, height=400]
 
 == How to give it a go ?
 
 Node.js tools are available via `Eclipse IDE for Java EE Developers` / `Eclipse IDE for JavaScript and Web Developers` https://eclipse.org/downloads/index-developer.php[developer builds] before the official Neon release.
- 
-
-
-
